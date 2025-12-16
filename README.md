@@ -1,7 +1,7 @@
-302-instead
+308-instead
 ===========
 
-yourls plugin to send a 302 (temporary) redirect instead of 301 (permanent) for sites where shortlinks may change
+yourls plugin to send a 308 (permanent) redirect instead of 301 (permanent) so the HTTP method of the original request is preserved
 
 This plugin applies across an entire yourls installation - cannot currently be customised per-link. Note that it will only work reliably on *new* links, since old links will have already been cached in browsers due to the use of 301 headers.
 
@@ -11,6 +11,6 @@ yourls 1.8.1 (although earlier versions may still work, only one minor change wa
 
 Installation
 
-    Create a user/plugins/302-instead directory in yourls
+    Create a user/plugins/308-instead directory in yourls
     Place the plugin.php file in above directory
     Activate plugin in yourls
